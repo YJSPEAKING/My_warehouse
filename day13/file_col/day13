@@ -1,0 +1,229 @@
+  107  cd ..
+  108  ll
+  109  cd ..
+  110  ll
+  111  cd ..
+  112  ll
+  113  cd home
+  114  ll
+  115  sudo apt-get install tree
+  116  ping www.baidu.com
+  117  sudo apt update
+  118  tree
+  119  tree --charset=ascii
+  120  tree
+  121  clear
+  122  su root
+  123  history
+  124  useradd oneplus
+  125  sudo useradd oneplus
+  126  ls
+  127  ls ../
+  128  ls
+  129  ls /
+  130  yangyijia@ubuntu:~$ ls ../
+  131  ls ../
+  132  sudo useradd -m oneplus
+  133  sudo userdel -r oneplus
+  134  ls ../
+  135  sudo user add -m oneplus -s /bin/bash
+  136  sudo useradd -m oneplus -s /bin/bash
+  137  ls ../
+  138  sudo userdel -r oneplus
+  139  sudo useradd -m oneplus -s /bin/bash
+  140  sudo passwd oneplus
+  141  cat /etc/passwd
+  142  sudo userdel -r oneplus 
+  143  cat /etc/passwd
+  144  sudo useradd -m oneplus -s /bin/bash
+  145  ls ../
+  146  su oneplus
+  147  sudo passwd oneplus
+  148  su oneplus
+  149  ls
+  150  ls ../
+  151  ls ../../
+  152  ls /
+  153  ls usr/
+  154  ls /usr
+  155  ls
+  156  ls /bin
+  157  ls ../
+  158  ls ../../
+  159  ls /
+  160  ls
+  161  ls ../
+  162  ls home/yangyijia
+  163  ls /home/yangyijia
+  164  ls .
+  165  ls
+  166  ls -l
+  167  cd file1
+  168  cd Desktop
+  169  cd ..
+  170  ls -l /dev
+  171  ls
+  172  mkdir day13
+  173  ls
+  174  cd day13/
+  175  ls
+  176  cd ..
+  177  ls
+  178  cd /day13
+  179  cd day13/
+  180  echo hello >file1
+  181  cat file1
+  182  ln -s file1 file2
+  183  ls
+  184  ls -l
+  185  export PS1="\[\e[37;40m\][\[\e[32;40m\]\u\[\e[37;40m\]@ \[\e[36;40m\]\w\[\e[0m\]]\\$ "
+  186  echo helloworld >file1
+  187  cat file1
+  188  cat file2
+  189  ls -l
+  190  ln -s file1 file3
+  191  ls -l
+  192  date
+  193  cd
+  194  cd ~
+  195  pwd
+  196  cd -
+  197  cd /home/oneplus
+  198  cd -
+  199  mkdir file1
+  200  ls
+  201  ls -l
+  202  mkdir day13/test1
+  203  ls
+  204  cd day13/
+  205  ls
+  206  cp file1 file4
+  207  ls
+  208  cp file2 file5
+  209  ls
+  210  cp file1 test1/file1_new
+  211  cp -i file1 test1/file1_new
+  212  pwd
+  213  cp -r test1 test2
+  214  ls
+  215  mv file1 test1
+  216  ls
+  217  cat file1
+  218  cd test1/
+  219  cat file1
+  220  total 48
+  221  drwxrwxr-x 2 yangyijia yangyijia 4096 Jan 11 20:44 day13
+  222  drwxr-xr-x 2 yangyijia yangyijia 4096 Jan 10 20:28 Desktop
+  223  drwxr-xr-x 2 yangyijia yangyijia 4096 Jan 10 20:28 Documents
+  224  drwxr-xr-x 2 yangyijia yangyijia 4096 Jan 10 20:28 Downloads
+  225  -rw-r--r-- 1 yangyijia yangyijia 8980 Jan 10 20:05 examples.desktop
+  226  -rw-rw-r-- 1 yangyijia yangyijia    0 Jan 11 16:31 file1
+  227  -rw-rw-r-- 1 yangyijia yangyijia    0 Jan 11 16:31 file2
+  228  history
+  229  ls
+  230  tree -h
+  231  tree --charset=ascii -h
+  232  cd ..
+  233  tree --charset=ascii -h
+  234  tree --charset=ascii -D
+  235  ls
+  236  cd ..
+  237  find /usr/include/ls
+  238  ls
+  239  find /usr/include/ -name stdio.h
+  240  ls
+  241  find . -name "file1" -a -type d
+  242  mkdir file1
+  243  mkdir day13/file1
+  244  cd day13/
+  245  ls
+  246  ls -l
+  247  find . -name "file1" -a -type d
+  248  cd ..
+  249  find . -name "file1" -a -type d
+  250  find . -name "file1" -o -name "file2"
+  251  ls
+  252  find . -name "file*"
+  253  find . -name "file[1-3]"
+  254  find . -user yangyijia
+  255  find . -perm 600
+  256  find . -perm 777
+  257  chmod 755 day13/file2
+  258  chmod 755 day13/file3
+  259  cd day13/
+  260  ls -l
+  261  chmod 755 file2
+  262  ls -l
+  263  find . -size 1
+  264  ll
+  265  find . -amin 5
+  266  find . -amin 60
+  267  find . -amin 120
+  268  find . -amin 180
+  269  find . -amin -60
+  270  find . -mmin -60
+  271  ls
+  272  echo hello file4
+  273  echo hello >file4
+  274  find .mmin -5
+  275  find -mmin -5
+  276  find -mmin -120
+  277  find -mmin +120
+  278  find -mtime -1
+  279  find -atime -1
+  280  find . -name file1|ls -l
+  281  find . -name file1|xargs ls -l
+  282  find . -type f
+  283  ls
+  284  cd ..
+  285  ls
+  286  find . -type f
+  287  cd day13/
+  288  find . -type f
+  289  rm test2/file1_new
+  290  find . -type f
+  291  mkdir file_col
+  292  find . -type f -exec cp {} file_col/ \;
+  293  ls
+  294  cd file_col/
+  295  ls
+  296  find . -type f -exec mv {} file_col/ \;
+  297  cd ..
+  298  ls
+  299  rm file_col/*
+  300  find . -type f -exec cp {} file_col/ \;
+  301  ls file_col/
+  302  find . -name "file1"|xargs rm -rf
+  303  ls
+  304  cd file_col/
+  305  ls
+  306  ls file
+  307  find . -name "file1*"|xargs rm -rf
+  308  ls
+  309  df -h
+  310  ll
+  311  du -h --max-depth=1
+  312  cd ..
+  313  cd..
+  314  cd ..
+  315  du -h --max-depth=1
+  316  du -h --max-depth=2
+  317  du -h --max-depth=1
+  318  man du
+  319  du -h --max-depth=1
+  320  du -ah --max-depth=1
+  321  cd day13/
+  322  du -ah --max-depth=1
+  323  ll
+  324  ls
+  325  cat file2
+  326  cd file_col/
+  327  ls
+  328  cat file4
+  329  cat -s file4
+  330  cat -b file4
+  331  cat -E file4
+  332  cat -E file4>file5
+  333  cat -b file5
+  334  history
+  335  history |tail -229>day13_yangyijia.txt

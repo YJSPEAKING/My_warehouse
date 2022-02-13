@@ -1,0 +1,159 @@
+  518  export PS1="\[\e[37;40m\][\[\e[32;40m\]\u\[\e[37;40m\]@ \[\e[36;40m\]\w\[\e[0m\]]\\$ "
+  519  ls
+  520  cd day15/
+  521  ls
+  522  rm a.out 
+  523  gcc main.c 
+  524  ls
+  525  vim main.c 
+  526  gcc main.c 
+  527  vim main.c 
+  528  gcc main.c 
+  529  vim main.c 
+  530  gcc main.c 
+  531  gcc a.out 
+  532  gcc -c a.out
+  533  ls
+  534  gcc main.c 
+  535  ls
+  536  gcc a.out 
+  537  ls
+  538  gcc main.c 
+  539  gcc -c a.out 
+  540  gcc main.c 
+  541  rm a.out 
+  542  gcc main.c -o main.o
+  543  rm main.o
+  544  ls
+  545  gcc main.c file
+  546  gcc main.c -o file
+  547  ls
+  548  gcc -c file
+  549  gcc -E main.c 
+  550  ls
+  551  rm file 
+  552  gcc -S main.c 
+  553  ls
+  554  gcc -c main.s
+  555  ls
+  556  gcc main.o
+  557  vim main.o
+  558  vim main.c
+  559  gcc main.o -o main
+  560  gcc main
+  561  vim main
+  562  ls
+  563  main
+  564  ./main
+  565  ls
+  566  rm main
+  567  gcc main.c
+  568  ls
+  569  ./a.out 
+  570  rm main.c
+  571  ./a.out 
+  572  vim main.c
+  573  ls
+  574  rm main.o
+  575  rm main.s
+  576  rm a.out 
+  577  ls
+  578  gcc -S main.c 
+  579  ls
+  580  gcc main.s
+  581  ls
+  582  sudo apt install git
+  583  man add
+  584  export PS1="\[\e[37;40m\][\[\e[32;40m\]\u\[\e[37;40m\]@ \[\e[36;40m\]\w\[\e[0m\]]\\$ "
+  585  clear
+  586  cd day15
+  587  cd
+  588  cd day15
+  589  cd -
+  590  gdb
+  591  gdb -v
+  592  export PS1="\[\e[37;40m\][\[\e[32;40m\]\u\[\e[37;40m\]@ \[\e[36;40m\]\w\[\e[0m\]]\\$ "
+  593  clear
+  594  ls
+  595  cd day15
+  596  ls
+  597  rm main.s
+  598  rm main.c 
+  599  rm a.out 
+  600  ls
+  601  ls ./vim
+  602  vim main.c
+  603  gcc -E main.c
+  604  ls
+  605  gcc -E main.c -o main.i
+  606  ls
+  607* 
+  608  ls
+  609  gcc -c main.
+  610  gcc -c main.c
+  611  ls
+  612  gcc main.c
+  613  ls
+  614  vim multi.c
+  615  gcc -fPIC _Wall -c multi.c
+  616  gcc -fPIC -Wall -c multi.c
+  617  vim multi.c
+  618  gcc -fPIC -Wall -c multi.c
+  619  vim multi.c
+  620  gcc -fPIC -Wall -c multi.c
+  621  vim multi.c
+  622  gcc -fPIC -Wall -c multi.c
+  623  ls
+  624  gcc -shared -o libmulti.so multi.o
+  625  ls
+  626  sudo cp libmulti.so /usr/lib
+  627  vim main.c
+  628  rm main.o
+  629  rm main.s
+  630  rm main.i
+  631  ls
+  632  vim main.c
+  633  gcc -Wall -c multi.c
+  634  ls
+  635  gcc -o main main.c -lmulti
+  636  gcc main.c -lmulti
+  637  ls
+  638  vim main.c 
+  639  gcc main.c -lmulti
+  640  vim main.c 
+  641  vim multi.c 
+  642  find -name *multi*
+  643  find /home/usr/lib -name *multi*
+  644  find /home/usr/lib -name multi.so
+  645  find ~/usr/lib -name multi.so
+  646  find usr/lib -name multi.so
+  647  find /usr/lib -name multi.so
+  648  find /usr/lib -name *multi*
+  649  find /usr/lib -name libmulti.so
+  650  find /usr/lib -name *multi.so
+  651  gcc main.c -lmulti
+  652  ls
+  653  a.out
+  654  ./a.out 
+  655  vim multi.c 
+  656  gcc -fPIC -Wall -c multi.c
+  657  ls
+  658  gcc -shared -o libmulti.so multi.o
+  659  ls
+  660  sudo cp libmulti.so /usr/lib
+  661  gcc main.c -lmulti
+  662  ./a.out 
+  663  gcc -c multi.c
+  664  ar crsv libmulti.a add.o
+  665  ar crsv libmulti.a multi.o
+  666  ls
+  667  sudo cp libmulti.a /usr/lib
+  668  gcc main.c -lmulti
+  669  ls
+  670  ./a.out 
+  671  gcc -g main.c
+  672  gcc -g main.c -lmulti
+  673  ls
+  674  gdb a.out
+  675  history
+  676  history |tail -159 >day15_杨逸嘉.txt

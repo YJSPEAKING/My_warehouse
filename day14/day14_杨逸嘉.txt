@@ -1,0 +1,52 @@
+  404  clear
+  405  ll
+  406  ls -l
+  407  cd day14/
+  408  ls -l
+  409  clear
+  410  wc -l file
+  411  ls|wc -l
+  412  cd ..
+  413  ls|wc -l
+  414  clear
+  415  cd day14/
+  416  umask 022
+  417  umask
+  418  touch file1
+  419  ls -l
+  420  chmod file1 666
+  421  chmod 666 file1
+  422  ls -l
+  423  umask 002
+  424  clear
+  425  ls ~/usr/include|grep stdlib.h
+  426  ls /usr/include|grep stdlib.h
+  427  clear
+  428  ls
+  429  head -10 >new_file_Bible.txt
+  430  ls
+  431  cat new_file_Bible.txt 
+  432  vim new_file_Bible.txt 
+  433  ls
+  434  The_Holy_Bible.txt |head -10 >new_file_Bible.txt 
+  435  head -10 The_Holy_Bible.txt >new_file_Bible.txt 
+  436  cat new_file_Bible.txt 
+  437  clear
+  438  scp yangyijia@192.168.30.128:~/day14 .
+  439  ls
+  440* scp 
+  441  scp yangyijia@192.168.30.128:~/day14/new_file_Bible.txt C:\Users\杨逸嘉\Desktop\暂存
+  442  clear
+  443  scp yangyijia@192.168.30.128:~/day14 .
+  444  clear
+  445  scp yangyijia@192.168.30.128:~/day14/new_file_Bible.txt .
+  446  scp c2022@42.192.117.114:~/c2022/day13/day13_杨逸嘉.txt .
+  447  scp c2022@42.192.117.114:~/c2022/day13 .
+  448  scp c2022@42.192.117.114:~/c2022/day13/day13_杨逸嘉.txt .
+  449  scp c2022@42.192.117.114:~/c2022/day16/day16.tar.gz .
+  450  scp c2022@42.192.117.114:~/day14 .
+  451  scp c2022@42.192.117.114:~/day13/day13_杨逸嘉.txt .
+  452  ls
+  453  cat day13_杨逸嘉.txt 
+  454  history
+  455  history |tail -52 >day14_杨逸嘉.txt
